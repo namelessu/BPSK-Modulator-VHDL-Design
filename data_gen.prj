@@ -1,0 +1,3 @@
+vhdl work "register.vhd"
+vhdl work "constants.vhd"
+vhdl work "data_gen.vhd"

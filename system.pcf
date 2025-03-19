@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Dec 20 15:39:15 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "data" LOCATE = SITE "A13" LEVEL 1;
+COMP "spi_sck" LOCATE = SITE "AA20" LEVEL 1;
+COMP "clk" LOCATE = SITE "E12" LEVEL 1;
+COMP "spi_mosi" LOCATE = SITE "AB14" LEVEL 1;
+COMP "dac_clr" LOCATE = SITE "AB13" LEVEL 1;
+COMP "dac_cs" LOCATE = SITE "W7" LEVEL 1;
+COMP "reset" LOCATE = SITE "T15" LEVEL 1;
+PIN reset_pin<0> = BEL "reset" PINNAME PAD;
+PIN "reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+SCHEMATIC END;
+

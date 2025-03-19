@@ -1,0 +1,11 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "reset" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "clk" LOC = E12;
+NET "dac_clr" LOC = AB13;
+NET "reset" LOC = T15;
+NET "spi_mosi" LOC = AB14;
+NET "spi_sck" LOC = AA20;
+NET "data" LOC = A13;
+NET "dac_cs" LOC = W7;

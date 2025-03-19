@@ -1,0 +1,3 @@
+vhdl work "constants.vhd"
+vhdl work "real2bit.vhd"
+vhdl work "bpsk.vhd"

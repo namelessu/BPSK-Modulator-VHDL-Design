@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "F:/test/register_t.xst" -ofn "F:/test/register_t.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 register_t.ngc register_t.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o register_t_map.ncd register_t.ngd register_t.pcf 
+par -w -intstyle ise -ol high -t 1 register_t_map.ncd register_t.ncd register_t.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml register_t.twx register_t.ncd -o register_t.twr register_t.pcf 

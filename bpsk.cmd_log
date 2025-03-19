@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/test/bpsk.xst" -ofn "F:/test/bpsk.syr" 
+xst -intstyle ise -ifn "F:/test/bpsk.xst" -ofn "F:/test/bpsk.syr" 

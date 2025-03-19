@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Dec 20 15:06:46 2023
+# Process ID: 11120
+# Log file: F:/test/planAhead_run_1/planAhead.log
+# Journal file: F:/test/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source F:/test/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  reset]]
+startgroup
+set_property package_pin E12 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin AB13 [get_ports dac_clr]
+endgroup
+startgroup
+set_property package_pin W7 [get_ports dac_cs]
+endgroup
+startgroup
+set_property package_pin A13 [get_ports data]
+endgroup
+startgroup
+set_property package_pin T15 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin AB14 [get_ports spi_mosi]
+endgroup
+startgroup
+set_property package_pin AA20 [get_ports spi_sck]
+endgroup
+save_constraints
+startgroup
+set_property package_pin W7 [get_ports dac_cs]
+endgroup
+startgroup
+set_property package_pin A13 [get_ports data]
+endgroup
+startgroup
+set_property package_pin A13 [get_ports data]
+endgroup
+startgroup
+set_property package_pin W7 [get_ports dac_cs]
+endgroup
+save_constraints

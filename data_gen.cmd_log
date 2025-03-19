@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "F:/test/data_gen.xst" -ofn "F:/test/data_gen.syr" 
+xst -intstyle ise -ifn "F:/test/data_gen.xst" -ofn "F:/test/data_gen.syr" 
+xst -intstyle ise -ifn "F:/test/data_gen.xst" -ofn "F:/test/data_gen.syr" 
+xst -intstyle ise -ifn "F:/test/data_gen.xst" -ofn "F:/test/data_gen.syr" 
+xst -intstyle ise -ifn "F:/test/data_gen.xst" -ofn "F:/test/data_gen.syr" 

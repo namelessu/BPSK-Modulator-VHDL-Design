@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "F:/test/system.xst" -ofn "F:/test/system.syr" 
+xst -intstyle ise -ifn "F:/test/system.xst" -ofn "F:/test/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc system.ucf -p xc3s700an-fgg484-4 system.ngc system.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o system_map.ncd system.ngd system.pcf 
+par -w -intstyle ise -ol high -t 1 system_map.ncd system.ncd system.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml system.twx system.ncd -o system.twr system.pcf -ucf system.ucf 
+xst -intstyle ise -ifn "F:/test/system.xst" -ofn "F:/test/system.syr" 
+xst -intstyle ise -ifn "F:/test/system.xst" -ofn "F:/test/system.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc system.ucf -p xc3s700an-fgg484-4 system.ngc system.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o system_map.ncd system.ngd system.pcf 
+par -w -intstyle ise -ol high -t 1 system_map.ncd system.ncd system.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc system.ucf -p xc3s700an-fgg484-4 system.ngc system.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o system_map.ncd system.ngd system.pcf 
+par -w -intstyle ise -ol high -t 1 system_map.ncd system.ncd system.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml system.twx system.ncd -o system.twr system.pcf -ucf system.ucf 
+bitgen -intstyle ise -f system.ut system.ncd 

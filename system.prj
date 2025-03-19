@@ -1,0 +1,7 @@
+vhdl work "constants.vhd"
+vhdl work "register.vhd"
+vhdl work "real2bit.vhd"
+vhdl work "data_gen.vhd"
+vhdl work "com_dac.vhd"
+vhdl work "bpsk.vhd"
+vhdl work "system.vhd"

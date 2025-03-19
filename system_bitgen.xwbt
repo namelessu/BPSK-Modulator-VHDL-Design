@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\test\system.ncd
+OUTFILE=F:\test\system.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700an-4fgg484
+WORKINGDIR=F:\test
+LICENSE=WebPack
+USER_INFO=__0_0_0

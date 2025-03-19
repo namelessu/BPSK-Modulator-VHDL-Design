@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Dec 20 15:06:46 2023
+# Process ID: 11120
+# Log file: F:/test/planAhead_run_1/planAhead.log
+# Journal file: F:/test/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source F:/test/pa.fromHdl.tcl
+# create_project -name test -dir "F:/test/planAhead_run_1" -part xc3s700anfgg484-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "system.ucf" [current_fileset -constrset]
+Adding file 'F:/test/system.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {constants.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {register.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {real2bit.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {data_gen.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {com_dac.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {bpsk.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {system.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top system $srcset
+# add_files [list {system.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s700anfgg484-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "F:/test/constants.vhd" into library work
+Parsing VHDL file "F:/test/register.vhd" into library work
+Parsing VHDL file "F:/test/real2bit.vhd" into library work
+Parsing VHDL file "F:/test/data_gen.vhd" into library work
+Parsing VHDL file "F:/test/com_dac.vhd" into library work
+Parsing VHDL file "F:/test/bpsk.vhd" into library work
+Parsing VHDL file "F:/test/system.vhd" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700an/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700an/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700an/fgg484/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700an/fgg484/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
+Parsing UCF File [F:/test/system.ucf]
+Finished Parsing UCF File [F:/test/system.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: d649d881
+open_rtl_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 927.852 ; gain = 124.648
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  reset]]
+startgroup
+set_property package_pin E12 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin AB13 [get_ports dac_clr]
+endgroup
+startgroup
+set_property package_pin W7 [get_ports dac_cs]
+endgroup
+startgroup
+set_property package_pin A13 [get_ports data]
+endgroup
+startgroup
+set_property package_pin T15 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin AB14 [get_ports spi_mosi]
+endgroup
+startgroup
+set_property package_pin AA20 [get_ports spi_sck]
+endgroup
+save_constraints
+startgroup
+set_property package_pin W7 [get_ports dac_cs]
+endgroup
+startgroup
+set_property package_pin A13 [get_ports data]
+endgroup
+startgroup
+set_property package_pin A13 [get_ports data]
+endgroup
+startgroup
+set_property package_pin W7 [get_ports dac_cs]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See F:/test\planAhead_pid11120.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Dec 20 15:35:58 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

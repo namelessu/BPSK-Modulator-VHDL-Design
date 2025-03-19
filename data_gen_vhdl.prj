@@ -1,0 +1,3 @@
+vhdl work "F:\test\register.vhd"
+vhdl work "F:\test\constants.vhd"
+vhdl work "F:\test\data_gen.vhd"

@@ -1,0 +1,7 @@
+vhdl work "F:\test\constants.vhd"
+vhdl work "F:\test\register.vhd"
+vhdl work "F:\test\real2bit.vhd"
+vhdl work "F:\test\data_gen.vhd"
+vhdl work "F:\test\com_dac.vhd"
+vhdl work "F:\test\bpsk.vhd"
+vhdl work "F:\test\system.vhd"
